@@ -1,0 +1,318 @@
+/*COMMON STYLES*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+
+  html {
+    scroll-behavior: smooth; 
+    height: 100%;
+    background: linear-gradient(45deg, red, yellow, blue, red);
+  }
+
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px;
+  }
+
+
+  @media (max-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .container {
+      max-width: 320px;
+    }
+  }
+
+
+body {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    height: 100vh;
+    font-weight: 400;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   color: aquamarine;
+    margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+p {
+  margin: 0px;
+}
+
+li {
+  list-style-type: none;
+ }
+
+ button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
+/*HEADER*/
+.header {
+display: flex;
+flex-wrap: nowrap;
+}
+
+  .header .container {
+  display: flex;
+  justify-content: center;
+  height: 120px;
+  }
+  
+  h1 {
+    font-family: 'Luckiest Guy', cursive;
+background: url(./assets/red-roses-texture-background-texture-close-up-red-roses-texture-background-115535227.jpg) no-repeat center center;
+ background-size: cover;
+ -webkit-text-fill-color: transparent;
+ -webkit-background-clip: text;
+ -moz-background-clip:text;
+ background-clip:text; 
+ font-size:90px;
+ font-weight: 900;
+ text-align:center;
+  }
+
+  .heartrate {
+    width:80px;
+    height: 80px;
+  }
+
+  .hiscore-button {
+    position: absolute;
+    padding: 20px 20px;
+  left: 90px;
+  }
+
+ /*main*/
+
+  .memory-cards {
+    width: 900px;
+    height: 750px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+  }
+
+  .memory-card {
+    cursor: pointer;
+   width: 180px;
+   height: 180px;
+    gap: 5px;
+    position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+}
+
+.memory-card:active {
+ transform: scale(0.97);
+ transition: transform .2s;
+}
+  
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+  
+  .front-face,
+  .back-face {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    position: absolute;
+    backface-visibility: hidden;
+  }
+
+  .front-face {
+    transform: rotateY(180deg);
+  }
+
+ /*Rabbit*/
+
+
+.rabbit {
+  width: 250px;
+  position: absolute;
+  bottom: 7%;
+  right: 7%;
+} 
+@media (max-width: 1440px) {
+  .rabbit {
+    display: none;
+  }
+}
+
+
+
+.speech-bubble {
+  text-align: center;
+	position: relative;
+	background-color: whitesmoke;
+  width: 300px;
+  color: blueviolet;
+	border-radius: .4em;
+  padding: 5px;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 37px solid transparent;
+	border-top-color: whitesmoke;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -18.5px;
+	margin-bottom: -37px;
+}
+
+.rabbit img {
+  padding-top: 40px;
+height: 20em;
+}
+
+
+
+ /*Popup*/
+
+
+  .popup {
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+
+ .show  {
+visibility: visible;
+opacity: 1;
+  }
+
+  
+  .popup_body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .popup__content {
+    max-width: 600px;
+    background-color: cyan;
+    padding: 30px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .restart{
+border: 2px solid orange;
+padding: 10px 20px;
+background-color: blueviolet;
+  }
+
+ .popup_picture img {
+  width: 350px;
+  }
+
+
+/*Hiscore table*/
+
+.hiscore {
+  position:fixed;
+  top:10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  max-width: 600px;
+  background-color: cyan;
+  padding: 30px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+.show  {
+  visibility: visible;
+  opacity: 1;
+    }
+
+  .reset_button {
+    padding-top: 30px;
+    font-family: 'Lobster', cursive;
+    color:blueviolet;
+  }
+
+  
+  .scoretable {
+    border-spacing: 30px;
+  }
+
+ /*Footer*/
+
+ .footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+  }
+
+
+.year-footer {
+    display: flex;
+    gap: 20px;
+  }
+
+.year-footer-link:hover {
+    color: red;
+  }
+
+  .rs-footer {
+    width: 135px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(./assets/svg/rss.svg);
+    transition: .3s;
+  }
+
+.rs-footer:hover {
+    filter: invert(13%) sepia(87%) saturate(5072%) hue-rotate(357deg) brightness(106%) contrast(120%);
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/flaticon.ico"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">  
+    <h1>MeMoRy GaMe</h1>
+</div>
+    </header>
+    <div class="hiscore-button">
+        <button><img src="./assets/0964af61b38897cdbf67338e109c0ece.gif" class="heartrate" title="Лучшие результаты">Лучшие результаты</button>
+    </div>
+
+    <div class="hiscore">
+        <h2>Твои 10 лучших игр</h2>
+        <table class="scoretable">
+        </table>
+        <button class="reset_button">Вернуться</button>
+      </div>
+
+<section class="memory-cards">
+
+    <div class="memory-card" data-card="1">
+        <img class="front-face" src="./assets/jpg/1.jpg" alt="Greetings1">
+        <img class="back-face" src="./assets/jpg/unnamed.jpg" alt="Memory Card">
+    </div>
+    <div class="memory-card" data-card="1">
+        <img class="front-face" src="./assets/jpg/1.jpg" alt="Greetings1">
+        <img class="back-face" src="./assets/jpg/unnamed.jpg" alt="Memory Card">
+    </div>
+    <div class="memory-card" data-card="2">
+        <img class="front-face" src="./assets/jpg/2.jpg" alt="Greetings2">
+        <img class="back-face" src="./assets/jpg/unnamed.jpg" alt="Memory Card">
+    </div>
+    <div class="memory-card" data-card="2">
+        <img class="front-face" src="./assets/jpg/2.jpg" alt="Greetings2">
+        <img class="back-face" src="./assets/jpg/unnamed.jpg" alt="Memory Card">
+    </div>
+    <div class="memory-card" data-card="3">
+        <img class="front-face" src="./assets/jpg/3.jpg" alt="Greetings3">
+        <img class="back-face" src="./assets/jpg/unnamed.jpg" alt="Memory Card">
+    </div>
+    <div class="memory-card" data-card="3">
+        <img class="front-face" src="./assets/jpg/3.jpg" alt="Greetings3">
+        <img class="back-face" src="./assets/jpg/unnamed.jpg" alt="Memory Card">
+    </div>
+    <div class="memory-card" data-card="4">
+        <img class="front-face" src="./assets/jpg/4.jpg" alt="Greetings4">
+        <img class="back-face" src="./assets/jpg/unnamed.jpg" alt="Memory Card">
+    </div>
+    <div class="memory-card" data-card="4">
+        <img class="front-face" src="./assets/jpg/4.jpg" alt="Greetings4">
+        <img class="back-face" src="./assets/jpg/unnamed.jpg" alt="Memory Card">
+    </div>
+    <div class="memory-card" data-card="5">
+        <img class="front-face" src="./assets/jpg/5.jpg" alt="Greetings5">
+        <img class="back-face" src="./assets/jpg/unnamed.jpg" alt="Memory Card">
+    </div>
+    <div class="memory-card" data-card="5">
+        <img class="front-face" src="./assets/jpg/5.jpg" alt="Greetings5">
+        <img class="back-face" src="./assets/jpg/unnamed.jpg" alt="Memory Card">
+    </div>
+    <div class="memory-card" data-card="6">
+        <img class="front-face" src="./assets/jpg/6.jpg" alt="Greetings6">
+        <img class="back-face" src="./assets/jpg/unnamed.jpg" alt="Memory Card">
+    </div>
+    <div class="memory-card" data-card="6">
+        <img class="front-face" src="./assets/jpg/6.jpg" alt="Greetings6">
+        <img class="back-face" src="./assets/jpg/unnamed.jpg" alt="Memory Card">
+    </div>
+    <div class="memory-card" data-card="7">
+        <img class="front-face" src="./assets/jpg/7.jpg" alt="Greetings7">
+        <img class="back-face" src="./assets/jpg/unnamed.jpg" alt="Memory Card">
+    </div>
+    <div class="memory-card" data-card="7">
+        <img class="front-face" src="./assets/jpg/7.jpg" alt="Greetings7">
+        <img class="back-face" src="./assets/jpg/unnamed.jpg" alt="Memory Card">
+    </div>
+    <div class="memory-card" data-card="8">
+        <img class="front-face" src="./assets/jpg/8.jpg" alt="Greetings8">
+        <img class="back-face" src="./assets/jpg/unnamed.jpg" alt="Memory Card">
+    </div>
+    <div class="memory-card" data-card="8">
+        <img class="front-face" src="./assets/jpg/8.jpg" alt="Greetings8">
+        <img class="back-face" src="./assets/jpg/unnamed.jpg" alt="Memory Card">
+    </div>
+    <div class="memory-card" data-card="9">
+        <img class="front-face" src="./assets/jpg/9.jpg" alt="Greetings9">
+        <img class="back-face" src="./assets/jpg/unnamed.jpg" alt="Memory Card">
+    </div>
+    <div class="memory-card" data-card="9">
+        <img class="front-face" src="./assets/jpg/9.jpg" alt="Greetings9">
+        <img class="back-face" src="./assets/jpg/unnamed.jpg" alt="Memory Card">
+    </div>
+    <div class="memory-card" data-card="10">
+        <img class="front-face" src="./assets/jpg/10.jpg" alt="Greetings10">
+        <img class="back-face" src="./assets/jpg/unnamed.jpg" alt="Memory Card">
+    </div>
+    <div class="memory-card" data-card="10">
+        <img class="front-face" src="./assets/jpg/10.jpg" alt="Greetings10">
+        <img class="back-face" src="./assets/jpg/unnamed.jpg" alt="Memory Card">
+    </div>
+</section>
+<div class="rabbit">
+    <div class="speech-bubble">Привет!(✯◡✯) Собери все пожелания от Галчонка/╲/\╭( ͡°͡° ͜ʖ ͡°͡°)╮/\╱\</div>
+    <img src="./assets/369186502.gif" alt="rabbit"></img>
+</div>
+<div id="popup" class="popup">
+    <div class="popup_body">
+        <div class="popup__content">
+            <div class="popup_picture">
+                <img src="./assets/jpg/92a091961b395023c8bee798de176471.jpg" alt="Во!" class="">
+            </div>
+            <div class="popup__text"> Умница! Ты умнее, чем компьютер!!! Прошел игру за <span class="moves-counter">0</span> хода</div>
+            <button class="restart">Еще разок? </button>
+
+             </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <footer class="footer">
+    <div class="container">
+    <div class="year-footer">
+        <span class="year-footer-element">©</span>
+        <span class="year-footer-element">2022</span>
+        <a class="year-footer-link" href="https://github.com/darya-goncharova">github</a>
+    
+    </div>
+    <a class="rs-footer" href="https://rs.school/"></a>
+            </div>
+        </footer>
+    
+  <script src="./script.js"></script>
+</body>
+</html>
